@@ -1,0 +1,126 @@
+/* Resto de estilos */
+/* Keyframes para animación de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Desplazar hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Volver a la posición original */
+    }
+}
+
+/* Animación para el contenedor .hero */
+.hero {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animación para la sección .info-section */
+.info-section {
+    animation: fadeIn 1.5s ease-in-out 0.5s; /* Retraso de 0.5s para el efecto */
+    animation-fill-mode: both; /* Mantiene el estado final */
+}
+
+.hero {
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 250px 15%;
+    background-color: #333;
+    background-image: url('../Imagenes_de/camera.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Ajusta el color del texto para que contraste con el fondo */
+}
+
+
+.hero-text h2 {
+    font-size: 2.5em;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+
+.info-section {
+    display: flex;
+    flex-direction: row; /* Mantener en fila */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 40px 10%;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    font-family: 'Arial', sans-serif;
+    height: 500h; /* Ocupar toda la altura de la ventana */
+}
+
+.info-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    /* Eliminar esquinas redondeadas */
+    margin-right: 20px; /* Añadir separación con las columnas */
+}
+
+.info-columns {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Mantener columnas internas */
+    justify-content: center;
+    gap: 10px;
+}
+
+.info-content h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-content p {
+    line-height: 1.5;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+
+
+.info-columns div {
+    padding: 10px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    /* Eliminar esquinas redondeadas */
+}
+
+.info-columns h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-columns p {
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 1em;
+}

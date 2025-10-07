@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.5s ease; /* Agrega animación */
+}
+
+.hero h1:hover {
+    transform: scale(1.1); /* Efecto hover de escalado */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espacio entre elementos */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    animation: fadeIn 1s ease-out; /* Animación de entrada */
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Animación de hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Aumenta tamaño en hover */
+}
+
+.text-content {
+    width: 45%;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-out; /* Animación de entrada */
+}
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-link img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-link:hover {
+    transform: scale(1.1); /* Efecto hover */
+}
+
+.features {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Animación de entrada */
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin: 0 auto 30px; /* Centrado y con margen inferior */
+}
+
+.feature {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2.5%;
+    text-align: center;
+    transition: transform 0.3s ease; /* Efecto en hover */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Eleva el elemento al pasar el cursor */
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+    transform: rotate(10deg); /* Gira ligeramente en hover */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+    justify-content: space-around; /* Distribuye los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    animation: fadeInUp 1s ease-out; /* Animación de entrada */
+}
+
+
+.feature {
+    width: 45%;
+    margin: 10px 0; /* Margen vertical entre elementos */
+    text-align: center;
+    transition: transform 0.3s ease; /* Efecto en hover */
+}
+
+/* Keyframes de animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.porque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Espacio superior e inferior */
+    text-align: center; /* Centra el texto */
+}
+
+.porque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px; /* Espacio debajo del título */
+    color: #000; /* Ajusta el color según el diseño */
+}
+

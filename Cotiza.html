@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rp Digital</title>
+  
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/cotiza.css">
+    <script src="JS/transparent.js"></script>
+    <script src="JS/slider.js"></script>
+    <script src="JS/headerdrow.js"></script>
+    <script src="https://kit.fontawesome.com/ca58e299ed.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/Logo.png" alt="Logo">
+            <h1>Rp <span>Digital</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="#">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="invitaciones.html">Invitaciones Digitales</a></li>
+                        <li><a href="#" id="eventos">Eventos Sociales <span id="plus">+</span></a>
+                            <ul class="sub-dropdown" id="more-events">
+                                <li><a href="EventosBoda.html">Fotoografía de Bodas</a></li>
+                                <li><a href="EventosXV.html">Fotoografía de XV años</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="seciones.html">Sesiones Fotográficas</a></li>
+                    </ul>
+                </li>
+                <li><a href="Cotiza.html">Cotiza gratis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+
+
+   
+    
+    <main>
+        
+        <h1>Contáctanos</h1>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="empresa">Por que medio nos Contacto</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="fotografia-aerea">....</option>
+                    <option value="fotografia-aerea">Recomendación</option>
+                    <option value="video">Facebook</option>
+                    <option value="edicion">Intragram</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="nombre">Nombre <span class="required">*</span></label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono <span class="required">*</span></label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="servicio">¿Qué servicio necesitas? <span class="required">*</span></label>
+                <select id="servicio" name="servicio" required>
+                    <option value="fotografia-aerea">Invitaciones Digitales</option>
+                    <option value="video">Fotografía</option>
+                    <option value="edicion">Edición</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha aproximada del evento/sesión</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            
+            <div class="form-group">
+                <label for="proyecto">¡Cuéntanos un poco más sobre tu proyecto!</label>
+                <textarea id="proyecto" name="proyecto" rows="4"></textarea>
+            </div>
+            
+            <p>Nota: Si es por recomendación, pon en ¡Cuéntanos un poco más sobre tu proyecto!, quien te recomienda, para aplicarte un 10% de descuento.</p>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>Fotógrafos Profesionales</h3>
+            <p>Fotografía Profesional México<br>Fotografo profesionales para eventos sociales. Sesiones fotográficas familiares.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa fa-youtube"></i> YouTube</a>
+                <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>En Nuestro Blog</h3>
+            <a href="#">Fotografía de alimentos y bebidas</a><br>
+            <a href="#">Fotógrafos de arquitectura</a><br>
+            <a href="#">Fotógrafos de bodas</a><br>
+            <a href="#">Fotógrafos para eventos</a><br>
+            <a href="#">Fotógrafos para industrias</a><br>
+            <a href="#">Fotógrafos para productos</a><br>
+            <a href="#">Fotógrafos de XV años</a><br>
+            <a href="#">Retratos personales y familiares</a><br>
+            <a href="#">Sesiones de modelaje</a>
+        </div>
+
+        <div>
+            <h3>Ligas de Interés</h3>
+            <a href="#">Cámaras Fotográficas</a><br>
+            <a href="#">Nikon D3300</a><br>
+            <a href="#">Frases de fotografía inspiradoras</a><br>
+            <a href="#">Cómo hacer fotografía en fondo blanco</a><br>
+            <a href="#">Ideas para fotografías de Bodas</a><br>
+            <a href="#">Ideas para fotografías de XV años</a><br>
+            <a href="#">Ideas de retratos familiares</a><br>
+            <a href="#">Ideas para sesiones de parejas</a>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        © 2024 Todos los derechos reservados. Invitaciones Profesional y fotografía. | <a href="#">Aviso de privacidad</a> | <a href="#">Bolsa de trabajo</a>
+    </div>
+    
+    </body>

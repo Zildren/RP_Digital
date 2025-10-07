@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%; /* Reduce el padding */
+    background-color: #333;
+    height: 70px; /* Define una altura más pequeña si es necesario */
+    position: fixed; /* Fija el header */
+    top: 0; /* Lo coloca en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+header.transparent {
+    background-color: rgba(51, 51, 51, 0.5); /* Fondo semi-transparente */
+}
+
+
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para la clase .logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px; /* Separación entre el logo y el texto */
+    max-width: 50px; /* Ajusta el tamaño del logo según prefieras */
+}
+
+.logo h1 {
+    font-size: 1.5em;
+}
+
+.logo span {
+    font-weight: lighter;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilo para el hover en el menú de navegación */
+nav ul li a:hover {
+    border-bottom: 2px solid #fff; /* Línea blanca debajo del texto */
+    color: #ccc; /* Cambia el color del texto si deseas */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 125px;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+}
+
+nav ul li ul.dropdown li a {
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul li ul.dropdown li a:hover {
+    background-color: #555;
+}
+
+.sub-dropdown {
+    display: none; /* Inicialmente oculto */
+    padding-left: 0px;
+}
+

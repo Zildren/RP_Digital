@@ -1,0 +1,272 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+
+/* Estilos para el banner */
+.banner {
+    background: linear-gradient(135deg, #1b1b1b, #343434);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffffe1;
+    z-index: 2;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px rgba(12, 12, 12, 0.8);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.promo {
+    display: inline-block;
+    font-weight: bold;
+    color: #1b1b1b;
+    background: #121212;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(255, 255, 254, 0.5);
+}
+
+.promo:hover {
+    background: #f50303ee;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 212, 201, 0.8);
+}
+
+
+
+/* Contenedor de los botones */
+.buttons {
+    display: flex; /* Activa el modelo de caja flexible para organizar los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre cada botón */
+}
+
+/* Estilos comunes para los botones de WhatsApp y correo */
+.whatsapp-button,
+.email-button {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 1rem; /* Define el tamaño del texto relativo al tamaño raíz */
+    padding: 10px 20px; /* Espaciado interno: arriba/abajo 10px, izquierda/derecha 20px */
+    border-radius: 5px; /* Bordes redondeados con un radio de 5 píxeles */
+    font-weight: bold; /* Texto en negrita */
+    display: flex; /* Usa diseño flexible para alinear ícono y texto */
+    align-items: center; /* Centra verticalmente el contenido dentro del botón */
+    justify-content: center; /* Centra horizontalmente el contenido del botón */
+    gap: 10px; /* Espacio entre el ícono y el texto dentro del botón */
+}
+
+/* Estilos específicos para el ícono de WhatsApp */
+.whatsapp-button img {
+    width: 20px; /* Ancho del ícono de 20 píxeles */
+    height: 20px; /* Alto del ícono de 20 píxeles, cuadrado */
+}
+
+/* Estilo específico para el botón de WhatsApp */
+.whatsapp-button {
+    background-color: #25d366; /* Color de fondo verde típico de WhatsApp */
+    color: #fff; /* Color del texto en blanco */
+}
+
+/* Estilo específico para el botón de correo */
+.email-button {
+    background-color: #0078d7; /* Color de fondo azul característico del correo */
+    color: #fff; /* Color del texto en blanco */
+}
+
+/* Efecto hover para ambos botones */
+.whatsapp-button:hover,
+.email-button:hover {
+    opacity: 0.9; /* Reduce la opacidad al 90% al pasar el cursor, creando un efecto visual */
+}
+
+
+
+
+
+/* Estilos para el bloque de título y descripción */
+.titulo.slider {
+    margin-top: 40px; /* Espacio superior */
+    text-align: left; /* Alineación del texto */
+    border: none; /* Elimina los bordes */
+    background: transparent; /* Asegura que no haya fondo */
+    box-shadow: none; /* Elimina sombras si las hay */
+}
+
+.titulo.slider h1,
+.titulo.slider p {
+    margin: 0; /* Elimina márgenes del contenido */
+    padding: 0; /* Elimina rellenos del contenido */
+}
+.titulo.slider h1 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.titulo.slider p {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.6;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    background-image: url('../Imagenes_de/bodda.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    /* Puedes agregar más estilos aquí si necesitas un overlay u otros efectos */
+}
+
+
+container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: transparent; /* Asegúrate de que el fondo sea transparente */
+    border: none; /* Elimina cualquier borde */
+    box-shadow: none; /* Elimina sombras si las hay */
+}
+
+
+
+/* Contenedor general de servicios */
+/* Contenedor general de servicios */
+.services {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+    gap: 30px; /* Mayor espacio entre tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Fondo degradado suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Tarjetas individuales */
+.service-card {
+    background: #ffffff; /* Fondo blanco limpio */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px 15px; /* Espaciado interno */
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación al pasar el mouse */
+}
+
+/* Efecto hover en las tarjetas */
+.service-card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Iconos */
+.service-card .icon {
+    font-size: 3rem; /* Tamaño del ícono más grande */
+    margin-bottom: 15px; /* Espacio debajo del ícono */
+    color: #d70000; /* Color azul moderno */
+}
+
+/* Títulos dentro de las tarjetas */
+.service-card h2 {
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Color gris oscuro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Lista de servicios */
+.service-card ul {
+    list-style: none; /* Elimina viñetas */
+    padding: 0; /* Sin espacio interno adicional */
+    text-align: left;
+}
+
+/* Elementos de la lista */
+.service-card ul li {
+    margin-bottom: 10px; /* Espaciado entre ítems */
+    font-size: 1rem; /* Tamaño de fuente moderado */
+    color: #555; /* Color gris para el texto */
+    line-height: 1.5; /* Altura de línea para legibilidad */
+}
+
+/* Destacar texto en la lista */
+.service-card ul li em {
+    font-style: italic; /* Texto en cursiva */
+    color: #000000; /* Color azul moderno */
+}
+
+.service-card ul li strong {
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color gris oscuro */
+}
